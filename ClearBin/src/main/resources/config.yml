@@ -1,0 +1,42 @@
+settings:
+  auto-clear: true
+  interval-seconds: 600  # 10 minutes (default)
+  clear-arrows: false
+  clear-xp: false
+  
+  # High RAM mode - automatically reduces interval when RAM usage is high
+  high-ram-mode:
+    enabled: true
+    ram-threshold-percent: 80  # If RAM usage exceeds this %, switch to fast clear
+    fast-interval-seconds: 300  # 5 minutes when RAM is high
+    check-interval-seconds: 60  # Check RAM usage every 60 seconds
+
+warnings:
+  enabled: true
+  times:
+    - 60
+    - 30
+    - 10
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+
+messages:
+  prefix: "&8[&bClearBin&8] "
+  warning: "&cGround items will be cleared in %time% seconds!"
+  cleared: "&aRemoved %items% dropped items!"
+  reload: "&aConfiguration reloaded!"
+  status: "&eNext clear in: &b%time% &eseconds"
+  force-clear: "&aForce cleared %items% items!"
+  high-ram-mode-enabled: "&eHigh RAM detected (&c%ram%%&e)! Switching to fast clear mode (5 min)"
+  high-ram-mode-disabled: "&aRAM usage normal (&b%ram%%&a). Returning to standard clear mode (10 min)"
+
+# Suggestions displayed in chat
+suggestions:
+  - "&7Tip: Use &b/clearbin&7 to open your personal trash bin!"
+  - "&7Tip: Items with &eclearbin.bypass&7 permission won't be cleared!"
+  - "&7Tip: Use &b/clearbin status&7 to check next auto-clear time!"
+  - "&7Tip: Configure clear interval in &econfig.yml&7!"
+  - "&7Tip: Admins can use &b/clearbin clear&7 to force clear items!"

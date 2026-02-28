@@ -1,0 +1,32 @@
+name: ClearBin
+version: 1.0.0
+main: com.clearbin.ClearBin
+api-version: 1.13
+author: TM-Addons
+description: Auto item removal system with trash GUI
+
+commands:
+  clearbin:
+    description: Main ClearBin command
+    usage: /clearbin [open|clear|reload|status]
+    aliases: [cb, trash]
+
+permissions:
+  clearbin.admin:
+    description: Full admin access
+    default: op
+  clearbin.reload:
+    description: Reload config
+    default: op
+  clearbin.clear:
+    description: Force clear items
+    default: op
+  clearbin.status:
+    description: Check status
+    default: op
+  clearbin.bypass:
+    description: Items won't be cleared
+    default: false
+  clearbin.use:
+    description: Use trash GUI
+    default: true
