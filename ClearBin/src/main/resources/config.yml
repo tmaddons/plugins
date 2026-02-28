@@ -1,0 +1,25 @@
+settings:
+  auto-clear: true
+  interval-seconds: 600  # 10 minutes (default)
+  clear-arrows: false
+  clear-xp: false
+
+warnings:
+  enabled: true
+  times:
+    - 60
+    - 30
+    - 10
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+
+messages:
+  prefix: "&8[&bClearBin&8] "
+  warning: "&cGround items will be cleared in %time% seconds!"
+  cleared: "&aRemoved %items% dropped items!"
+  reload: "&aConfiguration reloaded!"
+  status: "&eNext clear in: &b%time% &eseconds"
+  force-clear: "&aForce cleared %items% items!"
